@@ -281,3 +281,15 @@ footer a:hover {
         margin-left: 0;
     }
 }
+
+/* Home 2 Utilities */
+.grayscale {
+    filter: grayscale(1);
+    transition: var(--transition);
+}
+.grayscale:hover {
+    filter: grayscale(0);
+}
+.ls-wide {
+    letter-spacing: 2px;
+}
