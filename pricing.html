@@ -22,7 +22,7 @@
                 
                 <div class="d-flex align-items-center order-lg-3">
                     <button class="me-2 d-none d-sm-flex" id="rtlToggle" title="Toggle RTL">
-                        <i class="bi bi-translate fs-5"></i>
+                        RTL
                     </button>
                     <button class="me-3" id="themeToggle" title="Toggle Theme">
                         <i class="bi bi-moon-fill fs-5"></i>
@@ -96,8 +96,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 p-4 border-primary border-2 shadow text-center scale-up">
-                            <div class="badge bg-primary text-white position-absolute top-0 start-50 translate-middle">POPULAR</div>
+                        <div class="card h-100 p-4 border-primary border-2 shadow text-center scale-up overflow-visible">
+                            <div class="badge bg-primary text-white position-absolute top-0 start-50 translate-middle-x" style="margin-top: -12px;">POPULAR</div>
                             <h5 class="fw-bold text-muted">PROFESSIONAL</h5>
                             <h2 class="fw-bold mb-4">$799<span class="fs-6 text-muted"> / project</span></h2>
                             <ul class="list-unstyled mb-4">
@@ -110,16 +110,213 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card h-100 p-4 border-0 shadow-sm text-center">
-                            <h5 class="fw-bold text-muted">ENTERPRISE</h5>
-                            <h2 class="fw-bold mb-4">Custom</h2>
-                            <ul class="list-unstyled mb-4">
-                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Ongoing Data Support</li>
-                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Custom API Integrations</li>
-                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Team Training</li>
-                                <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Priority Support</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-secondary w-100 mt-auto">Contact Us</a>
+                        <div class="col">
+                            <div class="card h-100 p-4 border-0 shadow-sm text-center">
+                                <h5 class="fw-bold text-muted">ENTERPRISE</h5>
+                                <h2 class="fw-bold mb-4">Custom</h2>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Ongoing Data Support</li>
+                                    <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Custom API Integrations</li>
+                                    <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Team Training</li>
+                                    <li class="mb-2"><i class="bi bi-check text-primary me-2"></i> Priority Support</li>
+                                </ul>
+                                <a href="contact.html" class="btn btn-secondary w-100 mt-auto">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Detailed Comparison -->
+        <section class="py-5">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2 class="fw-bold">Plan <span class="text-primary">Comparison</span></h2>
+                    <p class="text-muted">A detailed breakdown of every feature across our tiers.</p>
+                </div>
+                <div class="table-responsive shadow-sm rounded-4">
+                    <table class="table table-hover align-middle text-center mb-0">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="text-start p-4">Features</th>
+                                <th>Basic</th>
+                                <th>Professional</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-start p-3 fw-semibold">Interactive Elements</td>
+                                <td><i class="bi bi-dash text-muted"></i></td>
+                                <td><i class="bi bi-check-circle-fill text-primary"></i></td>
+                                <td><i class="bi bi-check-circle-fill text-primary"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="text-start p-3 fw-semibold">Data Sourcing</td>
+                                <td>Manual</td>
+                                <td>Semi-Auto</td>
+                                <td>Full API</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start p-3 fw-semibold">Delivery Time</td>
+                                <td>5-7 Days</td>
+                                <td>3-5 Days</td>
+                                <td>Priority</td>
+                            </tr>
+                            <tr>
+                                <td class="text-start p-3 fw-semibold">Support</td>
+                                <td>Email</td>
+                                <td>24/7 Priority</td>
+                                <td>Dedicated Manager</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Add-on Services -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="section-title text-center mb-5">
+                    <h2 class="fw-bold">Value <span class="text-primary">Add-ons</span></h2>
+                    <p class="text-muted">Need something extra? We've got you covered.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-0 shadow-sm h-100">
+                            <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80&w=400" class="rounded-3 mb-3" style="height: 180px; object-fit: cover;" alt="Addon">
+                            <h5 class="fw-bold">Data Cleaning</h5>
+                            <p class="text-muted small">We'll transform your messy spreadsheets into structured, ready-to-visualize datasets.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$150/project</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-0 shadow-sm h-100">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=400" class="rounded-3 mb-3" style="height: 180px; object-fit: cover;" alt="Addon">
+                            <h5 class="fw-bold">Expedited Delivery</h5>
+                            <p class="text-muted small">Need it yesterday? Get your first draft in under 48 hours with our rush service.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$200/project</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card p-4 border-0 shadow-sm h-100">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=400" class="rounded-3 mb-3" style="height: 180px; object-fit: cover;" alt="Addon">
+                            <h5 class="fw-bold">White-labeling</h5>
+                            <p class="text-muted small">Remove our branding and use your own corporate identity on all deliverables.</p>
+                            <div class="mt-auto d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-primary">$100/project</span>
+                                <button class="btn btn-sm btn-outline-primary rounded-pill">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Testimonials -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800" class="img-fluid rounded-4 shadow" alt="Trust">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="fw-bold mb-4">Why Clients <span class="text-primary">Invest In Us</span></h2>
+                        <div class="card p-4 border-0 shadow-sm bg-primary text-white mb-4">
+                            <p class="lead mb-3 fst-italic">"The Professional plan literally saved our quarterly report. The interactive dashboard allowed our board to explore data they previously didn't understand."</p>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=50" class="rounded-circle me-3" alt="Client">
+                                <div>
+                                    <h6 class="fw-bold mb-0">Sarah Jenkins</h6>
+                                    <small class="opacity-75">Director of Ops, TechFlow</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="card stat-card p-4 border-0 shadow-sm text-center h-100">
+                                    <h3 class="fw-bold text-primary mb-1">500+</h3>
+                                    <p class="text-muted mb-0 small">Projects Done</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card stat-card p-4 border-0 shadow-sm text-center h-100">
+                                    <h3 class="fw-bold text-primary mb-1">98%</h3>
+                                    <p class="text-muted mb-0 small">ROI Reported</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: FAQ -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
+                <div class="max-width-800 mx-auto">
+                    <h2 class="fw-bold text-center mb-5">Frequently Asked <span class="text-primary">Questions</span></h2>
+                    <div class="accordion accordion-flush shadow-sm rounded-4 overflow-hidden" id="pricingFAQ">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Can I upgrade my plan mid-project?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body">
+                                    Yes, you can upgrade at any time. We will simply pro-rate the difference based on the remaining work.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer monthly subscriptions?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body">
+                                    We primarily work on a per-project basis, but we offer "Retainer" options for Enterprise clients who need ongoing monthly support.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What file formats do I receive?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#pricingFAQ">
+                                <div class="accordion-body">
+                                    Depending on your plan, you'll receive PNG, PDF, SVG, and interactive HTML files. Professional and Enterprise plans also include raw AI/Figma source files.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Final CTA -->
+        <section class="py-5 position-relative overflow-hidden">
+            <div class="container">
+                <div class="card border-0 shadow-lg bg-dark text-white p-5 rounded-5 text-center position-relative overflow-hidden">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25" style="background: url('https://images.unsplash.com/photo-1551288049-bbbda536339a?auto=format&fit=crop&q=80&w=1200') center/cover;"></div>
+                    <div class="position-relative z-1">
+                        <h2 class="display-5 fw-bold mb-3">Ready to Tell Your Data Story?</h2>
+                        <p class="lead mb-4 opacity-75">Don't let your insights stay hidden in spreadsheets. Let's make them visual.</p>
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+                            <a href="#" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">Start Your Project</a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill">Free Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -129,10 +326,64 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center py-4">
-            <p class="mb-0 small">© 2026 VisualData. All rights reserved.</p>
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-3 text-white" href="#">
+                        <i class="bi bi-bar-chart-fill text-primary fs-3 me-2"></i>
+                        <span class="fw-bold fs-4">Visual<span class="text-primary">Data</span></span>
+                    </a>
+                    <p class="text-white opacity-75 mb-4">Empowering businesses with data-driven design and creative visualization solutions.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="bi bi-facebook fs-5"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-5"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fs-5"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Company</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html">About Us</a></li>
+                        <li class="mb-2"><a href="services.html">Services</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Support</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="contact.html">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">Help Center</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="fw-bold mb-4">Newsletter</h5>
+                    <p class="small text-white opacity-50 mb-3">Subscribe to get the latest data visualization trends.</p>
+                    <form class="d-flex gap-2">
+                        <input type="email" class="form-control" placeholder="Email Address">
+                        <button class="btn btn-primary" type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pt-3">
+                <p class="mb-0 small">© 2026 VisualData. All rights reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" alt="Visa" width="30">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" alt="Mastercard" width="30">
+                    <img src="https://img.icons8.com/color/48/000000/paypal.png" alt="Paypal" width="30">
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" title="Go to top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>

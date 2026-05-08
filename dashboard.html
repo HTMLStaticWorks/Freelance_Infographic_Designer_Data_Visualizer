@@ -42,9 +42,9 @@
     <!-- Sidebar -->
     <aside class="sidebar">
         <div class="px-4 mb-5">
-            <a href="index.html" class="d-flex align-items-center text-white text-decoration-none">
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
                 <i class="bi bi-bar-chart-fill text-primary fs-3 me-2"></i>
-                <span class="fw-bold fs-4">VisualData</span>
+                <span class="fw-bold fs-4 text-white">Visual<span class="text-primary">Data</span></span>
             </a>
         </div>
         <nav class="nav flex-column">
@@ -56,7 +56,7 @@
             <a class="nav-link" href="#brand" data-bs-toggle="tab"><i class="bi bi-shield-check me-2"></i> Brand Guidelines</a>
             <hr class="mx-3 border-secondary">
             <a class="nav-link" href="index.html"><i class="bi bi-house me-2"></i> Main Website</a>
-            <a class="nav-link text-danger" href="login.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a>
+            <a class="nav-link text-danger" href="index.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a>
         </nav>
     </aside>
 
@@ -70,7 +70,7 @@
             </div>
             <div class="d-flex align-items-center gap-3">
                 <button id="rtlToggle" title="Toggle RTL" class="btn btn-light rounded-circle">
-                    <i class="bi bi-translate"></i>
+                    RTL
                 </button>
                 <button id="themeToggle" title="Toggle Theme" class="btn btn-light rounded-circle">
                     <i class="bi bi-moon-fill"></i>
@@ -92,7 +92,7 @@
                         <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i> Profile</a></li>
                         <li><a class="dropdown-item" href="#"><i class="bi bi-gear me-2"></i> Settings</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="login.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                        <li><a class="dropdown-item text-danger" href="index.html"><i class="bi bi-box-arrow-left me-2"></i> Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,9 +138,9 @@
                     <div class="col-lg-8">
                         <div class="card p-4 border-0 shadow-sm h-100">
                             <h5 class="fw-bold mb-4">Project Statistics</h5>
-                            <div class="bg-light rounded p-5 text-center">
+                            <div class="bg-body-tertiary rounded p-5 text-center">
                                 <i class="bi bi-graph-up text-primary" style="font-size: 5rem;"></i>
-                                <p class="mt-3 text-muted">Vibrant statistics visualization will appear here.</p>
+                                <p class="mt-3 opacity-75">Vibrant statistics visualization will appear here.</p>
                                 <div class="row mt-4">
                                     <div class="col-4">
                                         <h4 class="fw-bold mb-0">8.5k</h4>
@@ -166,6 +166,80 @@
                                 <button class="btn btn-outline-primary text-start"><i class="bi bi-calendar-event me-2"></i> Schedule Review</button>
                                 <button class="btn btn-outline-primary text-start"><i class="bi bi-star me-2"></i> Feedback Survey</button>
                             </div>
+                            
+                            <hr class="my-4 opacity-10">
+                            
+                            <h6 class="fw-bold mb-3">Project Team</h6>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=35" class="rounded-circle me-3" alt="Designer">
+                                <div>
+                                    <p class="mb-0 fw-bold small">Alex Rivera</p>
+                                    <small class="text-primary">Lead Designer</small>
+                                </div>
+                                <i class="bi bi-chat-dots ms-auto text-muted"></i>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=35" class="rounded-circle me-3" alt="Analyst">
+                                <div>
+                                    <p class="mb-0 fw-bold small">James Chen</p>
+                                    <small class="text-primary">Data Scientist</small>
+                                </div>
+                                <i class="bi bi-chat-dots ms-auto text-muted"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Timeline Section -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card p-4 border-0 shadow-sm">
+                            <h5 class="fw-bold mb-4">Project Journey</h5>
+                            <div class="timeline-vertical">
+                                <div class="timeline-item completed">
+                                    <div class="timeline-dot"><i class="bi bi-check-lg"></i></div>
+                                    <div class="timeline-content">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <h6 class="fw-bold mb-0">Project Kickoff</h6>
+                                            <span class="badge bg-success-subtle text-success rounded-pill px-3">Completed</span>
+                                        </div>
+                                        <p class="text-muted small mb-1">Initial consultation and contract signing.</p>
+                                        <small class="text-primary opacity-75 fw-semibold">Apr 28, 2026</small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item completed">
+                                    <div class="timeline-dot"><i class="bi bi-check-lg"></i></div>
+                                    <div class="timeline-content">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <h6 class="fw-bold mb-0">Data Audit & Cleaning</h6>
+                                            <span class="badge bg-success-subtle text-success rounded-pill px-3">Completed</span>
+                                        </div>
+                                        <p class="text-muted small mb-1">Normalization of all 12 datasets for high-res visualization.</p>
+                                        <small class="text-primary opacity-75 fw-semibold">May 01, 2026</small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item active">
+                                    <div class="timeline-dot"><i class="bi bi-pencil-fill"></i></div>
+                                    <div class="timeline-content border-primary border-opacity-25 shadow-sm">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <h6 class="fw-bold mb-0 text-primary">Interactive Design Phase</h6>
+                                            <span class="badge bg-primary rounded-pill px-3">In Progress</span>
+                                        </div>
+                                        <p class="text-muted small mb-1">Creating high-fidelity interactive mockups with Neon theme.</p>
+                                        <small class="text-primary opacity-75 fw-semibold">Started May 05, 2026</small>
+                                    </div>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"><i class="bi bi-eye"></i></div>
+                                    <div class="timeline-content opacity-50">
+                                        <div class="d-flex justify-content-between align-items-center mb-1">
+                                            <h6 class="fw-bold mb-0">Review & Feedback</h6>
+                                            <span class="badge bg-secondary-subtle text-muted rounded-pill px-3">Upcoming</span>
+                                        </div>
+                                        <p class="text-muted small mb-0">Scheduled client walkthrough of Draft V3.</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -176,20 +250,20 @@
                 <div class="card p-5 border-0 shadow-sm">
                     <h4 class="fw-bold mb-4">Upload Raw Data</h4>
                     <p class="text-muted">Please upload your CSV, Excel, or JSON files here. Our team will begin the cleaning and normalization process.</p>
-                    <div class="border-2 border-dashed border-primary rounded-4 p-5 text-center bg-light">
+                    <div class="border-2 border-dashed border-primary rounded-4 p-5 text-center bg-body-tertiary">
                         <i class="bi bi-cloud-arrow-up display-3 text-primary mb-3"></i>
                         <h5>Drag & Drop your files here</h5>
-                        <p class="small text-muted">Maximum file size: 50MB</p>
+                        <p class="small opacity-75">Maximum file size: 50MB</p>
                         <button class="btn btn-primary px-4 mt-3">Browse Files</button>
                     </div>
                     <div class="mt-5">
                         <h6 class="fw-bold mb-3">Recent Uploads</h6>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-body-tertiary rounded-3 mb-2 border-0">
                                 <div><i class="bi bi-file-earmark-spreadsheet me-2 text-success"></i> Sales_Data_Q1.xlsx</div>
                                 <span class="badge bg-success rounded-pill">Processed</span>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center bg-transparent px-0">
+                            <li class="list-group-item d-flex justify-content-between align-items-center bg-body-tertiary rounded-3 border-0">
                                 <div><i class="bi bi-file-earmark-code me-2 text-primary"></i> User_Analytics.json</div>
                                 <span class="badge bg-success rounded-pill">Processed</span>
                             </li>
