@@ -8,26 +8,28 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body>
 
     <!-- Header (Same as index.html) -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-xl">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <i class="bi bi-bar-chart-fill text-primary fs-3 me-2"></i>
                     <span class="fw-bold fs-4">Visual<span class="text-primary">Data</span></span>
                 </a>
                 <div class="d-flex align-items-center order-lg-3">
-                    <button class="me-2 d-none d-sm-flex" id="rtlToggle" title="Toggle RTL">
+                    <button class="me-2 d-none d-lg-flex" id="rtlToggle" title="Toggle RTL">
                         RTL
                     </button>
-                    <button class="me-3" id="themeToggle" title="Toggle Theme">
+                    <button class="me-3 d-none d-lg-flex" id="themeToggle" title="Toggle Theme">
                         <i class="bi bi-moon-fill fs-5"></i>
                     </button>
-                    <a href="login.html" class="btn btn-outline-primary d-none d-md-inline-block me-2">Login</a>
-                    <a href="register.html" class="btn btn-primary d-none d-md-inline-block">Sign Up</a>
+                    <a href="login.html" class="btn btn-outline-primary d-none d-xl-inline-block me-2">Login</a>
+                    <a href="register.html" class="btn btn-primary d-none d-xl-inline-block">Sign Up</a>
                     <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -68,6 +70,15 @@
             <div class="mt-4 d-grid gap-2">
                 <a href="login.html" class="btn btn-outline-primary">Login</a>
                 <a href="register.html" class="btn btn-primary">Sign Up</a>
+                <hr class="my-4">
+                <div class="d-flex justify-content-center gap-3 mb-2">
+                    <button class="btn btn-outline-primary rounded-circle p-2" id="rtlToggleMobile" title="Toggle RTL" style="width: 45px; height: 45px;">
+                        RTL
+                    </button>
+                    <button class="btn btn-outline-primary rounded-circle p-2" id="themeToggleMobile" title="Toggle Theme" style="width: 45px; height: 45px;">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -82,8 +93,8 @@
                         <h1 class="display-3 fw-bold mb-4">Real-Time Data <span class="text-gradient">Dashboards</span> That Drive Decisions</h1>
                         <p class="lead mb-5 text-white opacity-75">Specializing in interactive visualizations for SaaS, Finance, and Healthcare. Transform your raw analytics into an intuitive cockpit.</p>
                         <div class="d-flex gap-3 justify-content-center">
-                            <a href="contact.html" class="btn btn-primary btn-lg px-5">Book a Demo</a>
-                            <a href="pricing.html" class="btn btn-outline-primary btn-lg px-5">View Pricing</a>
+                            <a href="contact.html" class="btn btn-primary btn-lg px-lg-5">Book a Demo</a>
+                            <a href="pricing.html" class="btn btn-outline-primary btn-lg px-lg-5">View Pricing</a>
                         </div>
                     </div>
                 </div>
@@ -189,28 +200,28 @@
                     <p class="text-muted">We connect with your existing tech stack to pull data from anywhere.</p>
                 </div>
                 <div class="row g-4 justify-content-center">
-                    <div class="col-6 col-md-3 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <div class="p-4 bg-body rounded-3 shadow-sm h-100 integration-card">
-                            <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 60px; object-fit: contain;" alt="SQL">
-                            <p class="fw-bold mb-0">SQL Databases</p>
+                            <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 100px; object-fit: contain;" alt="SQL">
+                            <p class="fw-bold mb-0 fs-5">SQL Databases</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <div class="p-4 bg-body rounded-3 shadow-sm h-100 integration-card">
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 60px; object-fit: contain;" alt="AWS">
-                            <p class="fw-bold mb-0">AWS S3</p>
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 100px; object-fit: contain;" alt="AWS">
+                            <p class="fw-bold mb-0 fs-5">AWS S3</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <div class="p-4 bg-body rounded-3 shadow-sm h-100 integration-card">
-                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 60px; object-fit: contain;" alt="BigQuery">
-                            <p class="fw-bold mb-0">BigQuery</p>
+                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 100px; object-fit: contain;" alt="BigQuery">
+                            <p class="fw-bold mb-0 fs-5">BigQuery</p>
                         </div>
                     </div>
-                    <div class="col-6 col-md-3 col-lg-2">
+                    <div class="col-6 col-md-4 col-lg-3">
                         <div class="p-4 bg-body rounded-3 shadow-sm h-100 integration-card">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 60px; object-fit: contain;" alt="GitHub">
-                            <p class="fw-bold mb-0">GitHub API</p>
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=300" class="img-fluid rounded mb-3" style="height: 100px; object-fit: contain;" alt="GitHub">
+                            <p class="fw-bold mb-0 fs-5">GitHub API</p>
                         </div>
                     </div>
                 </div>
@@ -347,7 +358,7 @@
         </section>
 
         <!-- Section 10: CTA -->
-        <section class="py-5 text-center bg-primary text-white">
+        <section class="py-5 text-center bg-primary text-white cta-section">
             <div class="container py-5">
                 <h2 class="display-4 fw-bold mb-4">Ready to Transform Your Data?</h2>
                 <p class="lead mb-5 opacity-75">Join 200+ companies using VisualData to make smarter, faster decisions.</p>

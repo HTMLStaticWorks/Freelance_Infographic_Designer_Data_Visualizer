@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 </head>
 <body class="bg-light">
 
-    <div class="position-fixed top-0 end-0 m-4 d-flex gap-2" style="z-index: 1050;">
-        <button id="rtlToggle" title="Toggle RTL" class="btn btn-light rounded-circle shadow-sm">
-            RTL
-        </button>
-        <button id="themeToggle" title="Toggle Theme" class="btn btn-light rounded-circle shadow-sm">
-            <i class="bi bi-moon-fill"></i>
-        </button>
-    </div>
+
 
     <div class="container">
         <div class="row justify-content-center align-items-center vh-100">
-            <div class="col-md-5">
-                <div class="card p-5 shadow-lg border-0 rounded-4 position-relative">
+            <div class="col-lg-5 col-md-9 col-11">
+                <div class="card p-4 p-md-5 shadow-lg border-0 rounded-4">
+                    <div class="d-flex justify-content-end gap-2 mb-2">
+                        <button id="rtlToggle" title="Toggle RTL" class="btn btn-light btn-sm rounded-circle shadow-sm" style="width: 35px; height: 35px; padding: 0;">
+                            <small>RTL</small>
+                        </button>
+                        <button id="themeToggle" title="Toggle Theme" class="btn btn-light btn-sm rounded-circle shadow-sm" style="width: 35px; height: 35px; padding: 0;">
+                            <i class="bi bi-moon-fill small"></i>
+                        </button>
+                    </div>
 
                     <div class="text-center mb-4">
                         <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center mb-3">
@@ -48,12 +51,12 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="mb-4 d-flex justify-content-between align-items-center">
-                            <div class="form-check">
+                        <div class="mb-4 d-flex justify-content-between align-items-center gap-2">
+                            <div class="form-check mb-0">
                                 <input type="checkbox" class="form-check-input" id="rememberMe">
-                                <label class="form-check-label small" for="rememberMe">Remember me</label>
+                                <label class="form-check-label small text-nowrap" for="rememberMe">Remember me</label>
                             </div>
-                            <a href="#" class="small text-primary text-decoration-none">Forgot Password?</a>
+                            <a href="#" class="small text-primary text-decoration-none text-nowrap">Forgot Password?</a>
                         </div>
                         <button type="submit" class="btn btn-primary w-100 py-2">Login</button>
                     </form>
