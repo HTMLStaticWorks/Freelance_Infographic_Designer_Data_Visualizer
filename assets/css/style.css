@@ -60,10 +60,21 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+.btn-outline-light {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-outline-light:hover {
+    transform: translateY(-2px);
+}
+
 .btn-secondary {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
-    color: var(--text-dark);
+    color: #0f172a;
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
     font-weight: 600;
@@ -86,6 +97,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar.scrolled {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.navbar .order-lg-3 {
+    gap: 0.5rem;
+}
+
+.navbar .order-lg-3 > * {
+    margin: 0 !important;
 }
 
 .nav-link {
@@ -434,16 +453,37 @@ footer .d-flex.gap-3 a:hover {
         padding: 20px;
     }
 
-    .main-content header {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: 1.5rem;
+    .dashboard-header {
+        flex-wrap: wrap;
+        align-items: center !important;
+        gap: 1rem;
     }
 
-    .main-content header > div:last-child {
+    .brand-name-header {
+        color: var(--text-dark);
+        font-weight: 700;
+    }
+
+    .no-caret::after {
+        display: none !important;
+    }
+
+    .dashboard-brand-toggle {
+        order: 1;
+        width: auto;
+    }
+
+    .dashboard-actions {
+        order: 2;
+        width: auto;
+    }
+
+    .dashboard-welcome {
+        order: 3;
         width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        margin-top: 0.5rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(var(--primary-color-rgb), 0.15);
     }
 }
 
